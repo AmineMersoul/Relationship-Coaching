@@ -57,6 +57,52 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
                 child: Text("Get Coaching", style: TextStyle(fontFamily: 'Montserrat', fontSize: 20.0),),
               ),
+              Container(
+                margin: EdgeInsets.fromLTRB(25.0, 80.0, 25.0, 0.0),
+                decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(20.0),
+                  border: Border.all(color: Colors.grey[200], width: 0.4),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(25.0, 25.0, 5.0, 5.0),
+                          child: Text("YOU HAVE", style: TextStyle(
+                            color: Colors.grey,
+                            fontFamily: 'Quicksand',
+                            fontWeight: FontWeight.w900,
+                            fontSize: 14.0
+                          ),),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(25.0, 40.0, 5.0, 25.0),
+                          child: Text("206", style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'Quicksand',
+                            fontWeight: FontWeight.w400,
+                            fontSize: 40.0
+                          ),),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 60.0,),
+                    Container(
+                      height: 50.0,
+                      width: 125.0,
+                      decoration: BoxDecoration(
+                        color: Colors.greenAccent[100].withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(5.0)
+                      ),
+                      child: Center(
+                        child: Text("Buy more", style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold, color: Colors.green),),
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ],
