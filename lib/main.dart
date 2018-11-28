@@ -105,6 +105,17 @@ class _MyHomePageState extends State<MyHomePage> {
               )
             ],
           ),
+          SizedBox(height: 40.0,),
+          Container(
+            padding: EdgeInsets.only(left: 25.0, right: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text("MY COACHES", style: TextStyle(color: Colors.grey, fontFamily: 'Quicksand', fontWeight: FontWeight.w900, fontSize: 12.0),),
+                Text("VIEW PAST SESSIONS", style: TextStyle(color: Colors.green, fontFamily: 'Quicksand', fontWeight: FontWeight.w900, fontSize: 12.0),)
+              ],
+            ),
+          )
         ],
       ),
     );
