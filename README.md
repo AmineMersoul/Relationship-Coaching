@@ -1,8 +1,3 @@
-# relationship_coaching
+# Relationship Coaching App
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+In this Flutter Challenge I attempt to recreate the following ui design: [original design](https://dribbble.com/shots/4486758-Relationship-Coaching-App/attachments/1017305).
