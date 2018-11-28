@@ -46,8 +46,21 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      body: Container(
-      )
+      body: ListView(
+        shrinkWrap: true,
+        children: <Widget>[
+          Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment(0.0, -0.4),
+                height: 100.0,
+                color: Colors.white,
+                child: Text("Get Coaching", style: TextStyle(fontFamily: 'Montserrat', fontSize: 20.0),),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
