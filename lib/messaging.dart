@@ -157,6 +157,38 @@ class Messaging extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+            decoration: BoxDecoration(
+              color: Colors.white, borderRadius: BorderRadius.circular(40.0),
+              border: Border.all(color: Colors.grey[200], width: 0.4),
+            ),
+            child: Row(
+              children: <Widget>[
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.file_upload, color: Colors.grey,),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Type your message...", style: TextStyle(color: Colors.grey, fontFamily: 'Quicksand'),),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    borderRadius: BorderRadius.all(Radius.circular(100.0))
+                  ),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.send, color: Colors.grey,),
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
